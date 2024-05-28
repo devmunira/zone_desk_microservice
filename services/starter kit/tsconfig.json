@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "./dist",
+    "removeComments": true,
+    "noEmitOnError": true,
+    "allowUnreachableCode": false,
+    "useDefineForClassFields": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true,
+    "target": "ESNext",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "strict": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": false,
+    "isolatedModules": false,
+    "baseUrl": "./",
+    "paths": {
+      "@utils/*": ["src/utils/*"],
+      "@middlewares/*": ["src/middlewares/*"],
+      "@services/*": ["src/services/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@routes/*": ["src/routes/*"],
+      "@app/*": ["src/app/*"]
+    }
+  },
+  "include": ["./src/**/*", "./config/**/*"],
+  "exclude": ["node_modules", "**/node_modules/*", "./test/**/*"]
+}
